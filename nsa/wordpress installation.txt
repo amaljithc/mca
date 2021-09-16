@@ -1,0 +1,29 @@
+install wordpress on ubuntu with LAMP
+
+###1--> download wordpress
+
+sudo apt update
+cd /var/www/html/
+wget https://wordpress.org/latest.zip
+sudo apt install unzip 
+sudo mkdir -p /var/www/html/
+sudo unzip latest.zip
+
+###2 creating a database for wordpress site
+
+sudo mariadb -u root -p
+#enter your password
+
+#create database
+create database wordpress;
+
+
+###3 configure wordpress
+
+#open browser 
+https://localhost/wordpress
+
+#create an account with the database name wordpress
+#give username and password
+#login with these username and password
+	
